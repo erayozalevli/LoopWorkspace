@@ -215,7 +215,7 @@ jobs:
           # LoopWorkspace patches
           # -applies any patches located in the LoopWorkspace/patches/ directory
           if $(ls ./patches/* &> /dev/null); then
-          git apply ./patches/* --directory=LoopKit -v --whitespace=fix
+          git apply ./patches/* --allow-empty -v --whitespace=fix
           fi
 
           # Submodule Loop patches:
