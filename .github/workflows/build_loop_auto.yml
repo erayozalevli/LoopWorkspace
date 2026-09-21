@@ -1,3 +1,18 @@
+      - name: Debug LoopKit Structure
+        run: |
+          echo "PWD:"
+          pwd
+
+          echo "FILE:"
+          find . -name ExponentialInsulinModelPreset.swift
+
+          echo "PATCHES:"
+          ls -la patches
+
+      - name: Customize Loop
+        run: |
+          ...
+
 name: 4. Build Loop Auto 
 run-name: Build Loop Auto (${{ github.ref_name }})
 on:
