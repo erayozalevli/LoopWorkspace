@@ -1,1 +1,61 @@
-test
+From b63e78c37f7a73f110d3e636f0b254beeb44ed75 Mon Sep 17 00:00:00 2001
+2
+From: erayozalevli
+3
+Subject: [PATCH] Reduce action duration for insulin models r1
+4
+ 
+5
+diff --git a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+6
+--- a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+7
++++ b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+8
+@@ -20,14 +20,14 @@ extension ExponentialInsulinModelPreset {
+9
+public var actionDuration: TimeInterval {
+10
+switch self {
+11
+case .rapidActingAdult:
+12
+- return .minutes(360)
+13
++ return .minutes(180)
+14
+ 
+15
+case .rapidActingChild:
+16
+- return .minutes(360)
+17
++ return .minutes(180)
+18
+ 
+19
+case .fiasp:
+20
+- return .minutes(360)
+21
++ return .minutes(180)
+22
+ 
+23
+case .lyumjev:
+24
+- return .minutes(360)
+25
++ return .minutes(180)
+26
+ 
+27
+case .afrezza:
+28
+- return .minutes(300)
+29
++ return .minutes(180)
+30
+}
+31
+}
