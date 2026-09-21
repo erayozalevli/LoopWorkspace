@@ -2,9 +2,9 @@ From b63e78c37f7a73f110d3e636f0b254beeb44ed75 Mon Sep 17 00:00:00 2001
 From: erayozalevli
 Subject: [PATCH] Reduce action duration for insulin models r1
 
-diff --git a/Insulin/ExponentialInsulinModelPreset.swift b/Insulin/ExponentialInsulinModelPreset.swift
---- a/Insulin/ExponentialInsulinModelPreset.swift
-+++ b/Insulin/ExponentialInsulinModelPreset.swift
+diff --git a/LoopKit/Insulin/ExponentialInsulinModelPreset.swift b/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
+--- a/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
++++ b/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
 @@ -21,15 +21,15 @@ extension ExponentialInsulinModelPreset {
 
      switch self {
@@ -29,4 +29,3 @@ diff --git a/Insulin/ExponentialInsulinModelPreset.swift b/Insulin/ExponentialIn
 +        return .minutes(180)
      }
  }
-`
