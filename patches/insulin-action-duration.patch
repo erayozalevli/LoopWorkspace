@@ -1,28 +1,23 @@
 diff --git a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
 --- a/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
 +++ b/LoopKit/LoopKit/Insulin/ExponentialInsulinModelPreset.swift
-@@
--        case .rapidActingAdult:
+@@ -18,15 +18,15 @@ extension ExponentialInsulinModelPreset {
+     public var actionDuration: TimeInterval {
+         switch self {
+         case .rapidActingAdult:
 -            return .minutes(360)
-+        case .rapidActingAdult:
 +            return .minutes(150)
-
--        case .rapidActingChild:
+         case .rapidActingChild:
 -            return .minutes(360)
-+        case .rapidActingChild:
 +            return .minutes(150)
-
--        case .fiasp:
+         case .fiasp:
 -            return .minutes(360)
-+        case .fiasp:
 +            return .minutes(150)
-
--        case .lyumjev:
+         case .lyumjev:
 -            return .minutes(360)
-+        case .lyumjev:
 +            return .minutes(150)
-
--        case .afrezza:
+         case .afrezza:
 -            return .minutes(300)
-+        case .afrezza:
 +            return .minutes(150)
+         }
+     }
